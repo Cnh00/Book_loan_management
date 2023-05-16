@@ -642,3 +642,6 @@ C:\CN\Finished Project\Back\.NET\mteena\mteena\obj\Debug\net6.0\refint\PROJETNET
 C:\CN\Finished Project\Back\.NET\mteena\mteena\obj\Debug\net6.0\PROJETNET.pdb
 C:\CN\Finished Project\Back\.NET\mteena\mteena\obj\Debug\net6.0\PROJETNET.genruntimeconfig.cache
 C:\CN\Finished Project\Back\.NET\mteena\mteena\obj\Debug\net6.0\ref\PROJETNET.dll
+C:\CN\Finished Project\Back\.NET\mteena\mteena\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\CN\Finished Project\Back\.NET\mteena\mteena\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\CN\Finished Project\Back\.NET\mteena\mteena\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

@@ -4,18 +4,14 @@
 }
 
 
-<!--<a asp-controller="Home" asp-action="RedirectToFilmDTO">Go to Film management</a>
-<a asp-controller="Home" asp-action="RedirectTosalleDTO">Go to Salle management</a>
-<a asp-controller="Home" asp-action="RedirectTopositionDTO">Go to positions management</a>
-<a asp-controller="Home" asp-action="RedirectToplanificationDTO">Go to planifications management</a>
-<a asp-controller="Home" asp-action="RedirectTouserDTO">Go to user management</a>-->
+
 @{
     ViewBag.Title = "Ma page";
 }
 
 <style>
     body {
-        background-image: url('https://img00.deviantart.net/70e7/i/2010/072/9/a/simple_album_mosaic_by_justmardesign.jpg');
+ 
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100% 100%;
@@ -27,7 +23,7 @@
         padding: 0;
         display: flex;
         justify-content: center;
-        background-color: darkorange;
+        background-color: rgba(34,39,45,0.65);
     }
 
     header li {
@@ -60,14 +56,11 @@
 <body>
     <header>
         <ul>
-            <li><a asp-controller="Home" asp-action="RedirectToFilmDTO">Gestion des films</a></li>
-            <li><a asp-controller="Home" asp-action="RedirectTosalleDTO">Gestion des salles</a></li>
-            <li><a asp-controller="Home" asp-action="RedirectTopositionDTO">Gestion des positions</a></li>
-            <li><a asp-controller="Home" asp-action="RedirectToplanificationDTO">Gestion des planifications</a></li>
-            <li><a asp-controller="Home" asp-action="RedirectTouserDTO">Gestion des utilisateurs</a></li>
-            <li><a asp-controller="Home" asp-action="RedirectTodate">Gestion des Dates</a></li>
-            <li><a asp-controller="Home" asp-action="RedirectToclient">S'inscrire'</a></li>
-            <li><a asp-controller="Home" asp-action="RedirectToReservation">Reserver Ticket Film </a></li>
+            <li><a asp-controller="Home" asp-action="RedirectToEvent">Events</a></li>
+            <li><a asp-controller="Home" asp-action="RedirectToUser">Users</a></li>
+            <li><a asp-controller="Home" asp-action="RedirectToVille">Ville</a></li>
+            <li><a asp-controller="Home" asp-action="RedirectToActivite">Activite</a></li>
+     
         </ul>
     </header>
     <article>
