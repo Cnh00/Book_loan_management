@@ -1,0 +1,83 @@
+@model IEnumerable<projet.Model.Event>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Ville)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Note)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dateDebut)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dateFin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombreMax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.descriptionEvent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nomEvent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prix)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.type)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ville)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Note)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dateDebut)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dateFin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombreMax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.descriptionEvent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nomEvent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prix)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.type)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.idEvent">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.idEvent">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.idEvent">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

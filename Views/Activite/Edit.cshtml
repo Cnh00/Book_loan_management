@@ -1,0 +1,51 @@
+@model Activite
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Activite</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="idActivite" />
+            <div class="form-group">
+                <label asp-for="heureDebut" class="control-label"></label>
+                <input asp-for="heureDebut" class="form-control" />
+                <span asp-validation-for="heureDebut" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="heureFin" class="control-label"></label>
+                <input asp-for="heureFin" class="form-control" />
+                <span asp-validation-for="heureFin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="date" class="control-label"></label>
+                <input asp-for="date" class="form-control" />
+                <span asp-validation-for="date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="descriptionAct" class="control-label"></label>
+                <input asp-for="descriptionAct" class="form-control" />
+                <span asp-validation-for="descriptionAct" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nomActivite" class="control-label"></label>
+                <input asp-for="nomActivite" class="form-control" />
+                <span asp-validation-for="nomActivite" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
